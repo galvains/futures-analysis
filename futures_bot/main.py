@@ -4,7 +4,7 @@ import pandas as pd
 from time import time, sleep
 from datetime import datetime
 from binance.client import Client
-from config import *
+from futures_bot.config import *
 
 
 # Отправка уведомления боту
@@ -19,7 +19,6 @@ def get_info(current: float, middle: float) -> bool:
 
 
 def get_data(api_key: str, api_secret: str, symbol: str = 'ETHUSDT') -> None:
-
     while True:
         print(f"Start cycle ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})...")
 
